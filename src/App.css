@@ -1,0 +1,149 @@
+
+.back-btn{
+  background: black;
+  color: #fff;
+  padding: 15px 25px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.profile-box{
+  background: #3a3838;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.profile-heading{
+  font-size: 40px;
+  letter-spacing: 10px;
+  padding: 10px;
+}
+
+/* Profile Component */
+
+.profile__img-box{
+  flex: 0 1 40%;
+}
+.profile__img-box img{
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.profile__info-box{
+  flex: 1 1 60%;
+}
+.profile__info{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
+}
+/* 
+.profile__info-item p:nth-child(odd){
+  background: #e7d970;
+} */
+
+.profile__info-item p {
+  background: #6bc4b7;
+  margin: 10px 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.profile__username{
+  font-size: 24px;
+}
+
+.repo-container{
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.repo-box{
+  background: #e9e9e9;
+  margin: 20px 0;
+  padding: 20px;
+  text-align: start;
+  border-radius: 10px;
+}
+
+.repo-title{
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.repo-desc{
+  font-size: 18px;
+}
+
+
+.repo-link{
+  display: block;
+  background: #c5c09c;
+  margin: 10px 0;
+  padding: 15px 20px;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.repo-link:hover,
+.repo-link:active{
+  background: rgb(81, 79, 52);
+  color: black;
+  font-weight: 600;
+}
+
+.pages{
+  text-align: start;
+}
+
+.pagination-btn__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Repo Route */
+
+.repoInfo-container{
+  width: 80%;
+  margin: auto;
+
+}
+.repoInfo-box{
+  background: #e9e9e9;
+  margin: 20px 0;
+  padding: 20px;
+  text-align: start;
+  border-radius: 10px;
+}
+
+.repo-description{
+  font-size: 25px;
+}
+
+.repoInfo-box--small{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+
+
+.error-message{
+  background: rgba(234, 36, 36, 0.916);
+  padding: 20px;
+  margin: 50px auto;
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
+}
