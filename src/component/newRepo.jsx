@@ -25,7 +25,8 @@ const NewRepo = () => {
     <>
       <Helmet prioritizeSeoTags>
         <title>GitHub Repository App | Repo</title>      
-        <link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="../../favicon.ico" />
+        <link rel="canonical" href="/NewRepo" />
         <meta name="description" value={data.description} />
       </Helmet>
       <div className="link-container">

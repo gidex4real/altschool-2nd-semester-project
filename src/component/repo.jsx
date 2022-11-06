@@ -54,7 +54,8 @@ const Repo = () => {
   <>
     <Helmet prioritizeSeoTags>
       <title>GitHub Repository App | All Repos</title>
-      <link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
+      <link rel="icon" type="image/svg+xml" href="../../favicon.ico" />
+      <link rel="canonical" href="/repo" />
       <meta name="description" value="All Simon Gideon repositories on Github" />
     </Helmet>
     <div className="link-container">

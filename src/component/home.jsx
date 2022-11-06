@@ -12,7 +12,7 @@ const Home = () => {
         <title>GitHub Repository App | Home</title>
         <link rel="icon" type="image/svg+xml" href="../../favicon.ico" />
         <meta name="description" value="All Simon Gideon repositories page" />
-        <link rel="canonical" href="https://www.tacobell.com" />
+        <link rel="canonical" href="/" />
         <meta property="og:title" content="Repositories"/>
       </Helmet>
       <div className="github-container">
