@@ -1,11 +1,12 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:weight') */
 @import url('https://fonts.cdnfonts.com/css/poppins');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
 .back-btn{
   background: black;
   color: #fff;
@@ -16,7 +17,6 @@
 }
 
 body{
-  background: #F2F2F2;
   font-family: 'Poppins', sans-serif;
 
 }
@@ -24,6 +24,12 @@ body{
   width: 70%;
   margin: auto;
   padding: 10px;
+}
+.main-heading--small{
+  font-size: 20px;
+}
+.repo-list-box{
+  margin-top: 20px;
 }
 .profile-box{
   background-color: aqua;
@@ -35,6 +41,10 @@ body{
 .profile__img-box{
   flex: 1 1 30%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 30px 0;
 }
 .profile-img{
   width: 100%;
@@ -60,8 +70,9 @@ body{
   margin: 30px 0;
   font-size: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
 }
 .profile__info p{
   padding: 10px;
@@ -208,13 +219,98 @@ body{
   margin-top: 3rem;
 }
 
-
-
 .error-message{
-  background: rgba(234, 36, 36, 0.916);
+  font-size: 20px;
+  background: rgba(201, 27, 27, 0.916);
   padding: 20px;
   margin: 50px auto;
   width: 50%;
-  text-align: center;
+  height: 30vh;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  .logo-box {
+    width: 5%;
+    margin: 0 5px;
+    padding: 3px;
+}
+  .profile__img-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:20px 0;
+  }
+
+  .profile__info{
+    margin: 15px 0;
+    font-size: 16px;
+    gap: 3px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .profile-heading {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  .profile__img-box {
+    margin: 10px 0;
+  }
+  .repo-title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+  .repo-box {
+    margin: 30px 0;
+    padding: 10px 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-box {
+    width: 10%;
+  }
+  .profile-heading {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .profile-box {
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+  .profile__img-box {
+    margin: 5px 0;
+    align-items: center;
+  }
+  .profile-img {
+    width: 70%;
+  }
+  .profile-btn {
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 20px;
+}
+  .repo-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+  .repo-box {
+    margin: 20px 0;
+    padding: 7px 3px;
+  }
+  .repo-link {
+    font-size: 15px;
+    margin-top: 15px;
+    width: 150px;
+    padding: 10px;
+}
 }

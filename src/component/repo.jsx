@@ -36,8 +36,20 @@ const Repo = () => {
     fetchUserInfo();  
   }, []);
   
-  if (!userInfo && error) return <h1>Error loading page...</h1>
-  if (!userInfo) return <h1>Loading...</h1>
+  if (!userInfo && error) {
+    return (
+      <div className="repo-container">
+        <h1>Error loading page...</h1>
+      </div>
+    )
+  }
+  if (!userInfo) {
+    return (
+      <div className="repo-container">
+        <h1>Loading...</h1>
+      </div>
+    )
+  }
   return(
   <>
     <Helmet prioritizeSeoTags>
@@ -47,11 +59,11 @@ const Repo = () => {
     </Helmet>
     <div className="link-container">
       <Link className="back-btn" to={-1}>Back</Link>
-      <Link className="back-btn" to='/'>Error page</Link>
+      <Link className="back-btn" to='/error'>Error page</Link>
     </div>
     <div className="repo-container">
       <GitHubProfile user={userInfo} />
-      <div>
+      <div className="repo-list-box">
         <h3 className="profile-heading repo-list-heading" >List of Repositories</h3>
         {
         repos.slice(skip, skip + per_page).map((repo)=>{

@@ -1,12 +1,22 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
-function ErrorFallback({error}) {
+function ErrorFallback({error, resetErrorBoundary}) {
   return (
-    <div role="alert" className="error-message">
-      <p>Something went wrong:</p>
-      <pre>{error.message}</pre>
-      <Link className="btn" to='/'>Back Home</Link>
-    </div>
+    <>
+      <Helmet>
+        <title>Repositories</title>
+        <meta name="description"content="error page " />
+        <link rel="canonical" href="/error" />
+      </Helmet>
+
+      <div role="alert" className="error-message">
+        <p>Something went wrong:</p>
+        <pre>{error.message}</pre>
+        <Link to='/' className="repo-link error-btn" onClick={resetErrorBoundary}>Try again</Link>
+        {/* <Link to='/'>Back to Home</Link> */}
+      </div>
+    </>
   )
 }
 

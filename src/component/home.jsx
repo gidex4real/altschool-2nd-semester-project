@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Helmet prioritizeSeoTags>
         <title>GitHub Repository App | Home</title>
-        <link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href="../../favicon.ico" />
         <meta name="description" value="All Simon Gideon repositories page" />
         <link rel="canonical" href="https://www.tacobell.com" />
         <meta property="og:title" content="Repositories"/>
@@ -23,8 +23,8 @@ const Home = () => {
         </header>
         <div className="text-box">
           <h1 className='main-heading'>
-            <span className='main-heading--big'>Welcome to my Github</span>
-            <span className='main-heading--small'> Portfolio Page</span>
+            <span className='main-heading--big'>Welcome to my Github Repo</span>
+            <span className='main-heading--small'> Portfolio App</span>
           </h1>
           <Link to="/repo" className='github-btn'> See my GitHub Profile</Link>
         </div>
