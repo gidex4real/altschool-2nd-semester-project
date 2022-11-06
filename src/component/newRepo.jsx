@@ -28,40 +28,32 @@ const NewRepo = () => {
         <link rel="icon" type="image/svg+xml" href="../../public/favicon.ico" />
         <meta name="description" value={data.description} />
       </Helmet>
-      <Link className="back-btn" to={-1}>Back</Link>
-      <div className="repoInfo-container">
+      <div className="link-container">
+        <Link className="back-btn" to={-1}>Back</Link>
+        <Link className="back-btn" to='/error'>Error page</Link>
+      </div>
+      <div className="repo-container">
         <GitHubProfile user={user_info} />
         <div className="repoInfo-box">
           <h2 className="repo-title">{data.name}</h2>
           {data.description && <p className="repo-description">Description: {data.description}</p>}
-          <div className="repoInfo-box--small">
-            <div className="repoInfo-small">
-              <p>forks: {data.forks_count}</p>
-            </div>
-            <div className="repoInfo-small">
-              <p>Issues: {data.open_issues}</p>
-            </div>
-            <div className="repoInfo-small">
-              <p>Watchers: {data.watchers_count}</p>
-            </div>
-            <div className="repoInfo-small">
-              <p>Visibilty: {data.visibility}</p>
-            </div>
-            <div className="repoInfo-small">
-              <p>Size: {data.size}</p>
-            </div>
+          <div className="profile__info repoInfo-box">
+            <p>forks: {data.forks_count}</p>
+            <p>Issues: {data.open_issues}</p>
+            <p>Watchers: {data.watchers_count}</p>
           </div>
-          <div className="repoInfo-box--small">
-            <div className="repoInfo-small">
-              <p>Date Created: {created_at}</p>
-            </div>
-            <div className="repoInfo-small">
-              <p>Last updated: {updated_at}</p>
-            </div>
+          <div className="profile__info repoInfo-box">
+            <p>Visibilty: {data.visibility}</p>
+            <p>Date Created: {created_at}</p>
+            <p>Last updated: {updated_at}</p>
           </div>
           <small className="repo-lang">Language used: {data.language}</small>
-          <a href={data?.html_url} target="_blank" className='repo-link'>View Repository on GitHub</a>
+          <a href={data?.html_url} target="_blank" className='repo-link' id="repo-link">View Repository on GitHub</a>
         </div>
+      </div>
+      <div className="footer">
+        <h3 className='footer__heading'>AltSchool</h3>
+        <p>&copy; Developed by Simon Gideon 2022</p>
       </div>
     </>
   )

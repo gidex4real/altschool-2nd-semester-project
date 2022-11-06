@@ -14,6 +14,7 @@ function App() {
             <Route index element={<Repo />}/>
             <Route path=":id" element={<NewRepo />}/>
           </Route>
+          <Route path='error' element={<ErrorFallback resetErrorBoundary={<Home />} />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
       </ErrorBoundary>

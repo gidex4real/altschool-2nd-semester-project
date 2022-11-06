@@ -6,56 +6,46 @@ import home from "../img/svg/home.svg";
 import follow from "../img/svg/4-icon.svg";
 
 const GitHubProfile = ({ user }) => {
-  // console.log(user);
-  const data = new Date(user?.created_at)
-    const formatDate = data.toLocaleDateString("en-GB", {
-      day: 'numeric',
-      month: 'long',
-      year: 'numeric'
-    })
-  
-  return(
+  console.log(user);
+  const data = new Date(user?.created_at);
+  const formatDate = data.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+
+  return (
     <div className="profile-box">
       <div className="profile__img-box">
-        <img src={user?.avatar_url} alt="profile pic" />
+        <img src={user?.avatar_url} alt="profile pic" className="profile-img"/>
+        <div className="user-location">
+          <img src={location} alt="location icon" />
+          <span>{user?.location}</span>
+        </div>
       </div>
       <div className="profile__info-box">
-        <h3 className="profile-heading">GitHub Profile</h3>
-        <div className="profile__info-box--name">
-          <p className="profile__username">Full Name:  <span>{user?.name}</span></p>
-          <p className="profile__username">Username:  <span>{user?.login}</span></p>
-        </div>
-        <div className="profile__info-box--bio">
-          <h3>Bio: </h3>
-          <p className="profile__username">{user?.bio}</p>
+        <h3 className="profile-heading">{user?.name}</h3>
+        <div className="profile__info">
+          <span className="profile__username">{user?.bio}</span>
         </div>
         <div className="profile__info">
-          <div className="profile__info-item">
-            <p>Joined: {formatDate}</p>
-          </div>
-          <div className="profile__info-item">
-            <p>{user?.location}</p>
-          </div>
-          <div className="profile__info-item">
-            <p>Followers: {user?.twitter_username}</p>
-          </div>
-          <div className="profile__info-item">
-            <p>following: {user?.twitter_username}</p>
-          </div>
-          <div className="profile__info-item">
-            <p>Public Repos: {user?.twitter_username}</p>
-          </div>
-          
-          <div className="profile__info-item">
-            <p>Public Gists: {user?.twitter_username}</p>
-          </div>
+          <p>Repos: {user?.public_repos}</p>
+          <p>Followers: {user?.followers}</p>
+          <p>following: {user?.following}</p>
         </div>
-        <div className="profile__info-box--des">
-          <a href={user?.html_url} target="_blank" className="repo-link">View Profile on GitHub</a>
+        <div className="profile__info">
+          <p>Joined: {formatDate}</p>
+          <p>Twitter: {user?.twitter_username}</p>
+          <p>Gists: {user?.public_gists}</p>
+        </div>
+        <div className="profile__info">
+          <a href={user?.html_url} target="_blank" className="profile-btn">
+            View Profile on GitHub
+          </a>
         </div>
       </div>
     </div>
-  )
-  }
+  );
+};
 
 export default GitHubProfile;
