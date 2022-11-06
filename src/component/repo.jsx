@@ -39,14 +39,14 @@ const Repo = () => {
   if (!userInfo && error) {
     return (
       <div className="repo-container">
-        <h1>Error loading page...</h1>
+        <h1 className="profile-heading">Error loading page...</h1>
       </div>
     )
   }
   if (!userInfo) {
     return (
       <div className="repo-container">
-        <h1>Loading...</h1>
+        <h1 className="profile-heading">Loading...</h1>
       </div>
     )
   }

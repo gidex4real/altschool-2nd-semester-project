@@ -218,6 +218,7 @@ body {
 .error-message {
   font-size: 20px;
   background: rgba(201, 27, 27, 0.916);
+  /* color: #f2f2f2; */
   padding: 20px;
   margin: 50px auto;
   width: 50%;
@@ -226,6 +227,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.error-btn{
+  color: #f2f2f2;
 }
 
 /* Media Queries */
@@ -271,7 +275,7 @@ body {
 
 @media only screen and (max-width: 600px) {
   .logo-box {
-    width: 10%;
+    width: 20%;
   }
   .profile-heading {
     font-size: 25px;
@@ -317,7 +321,14 @@ body {
     padding: 20px;
     flex-direction: column;
     text-align: center;
-}
+  }
+  .error-message {
+    font-size: 14px;
+    padding: 10px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10px;
+  }
   
 }
 
