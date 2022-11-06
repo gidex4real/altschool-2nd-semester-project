@@ -97,8 +97,8 @@ const Repo = () => {
       </div>
     </div>
     <div className="footer">
-      <h3 className='footer__heading'>AltSchool</h3>
-      <p>&copy; Developed by Simon Gideon 2022</p>
+      <h3 className='footer__heading'>AltSchool Africa</h3>
+      <p>Copyright &copy; 2022 Developed by Simon Gideon</p>
     </div>
   </>  
   )

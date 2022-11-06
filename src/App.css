@@ -1,13 +1,13 @@
-@import url('https://fonts.cdnfonts.com/css/poppins');
+@import url("https://fonts.cdnfonts.com/css/poppins");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
 
-.back-btn{
+.back-btn {
   background: black;
   color: #fff;
   padding: 10px 20px;
@@ -16,29 +16,28 @@
   border-radius: 10px;
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
-
+body {
+  font-family: "Poppins", sans-serif;
 }
-.repo-container{
+.repo-container {
   width: 70%;
   margin: auto;
   padding: 10px;
 }
-.main-heading--small{
+.main-heading--small {
   font-size: 20px;
 }
-.repo-list-box{
+.repo-list-box {
   margin-top: 20px;
 }
-.profile-box{
+.profile-box {
   background-color: aqua;
   display: flex;
   box-shadow: 0 10px 10px rgb(0 0 0 / 30%);
   margin-bottom: 20px;
   border-radius: 10px;
 }
-.profile__img-box{
+.profile__img-box {
   flex: 1 1 30%;
   padding: 10px;
   display: flex;
@@ -46,27 +45,27 @@ body{
   justify-content: space-between;
   margin: 30px 0;
 }
-.profile-img{
+.profile-img {
   width: 100%;
   border-radius: 50%;
 }
-.user-location{
+.user-location {
   text-align: center;
 }
 
-.link-container{
+.link-container {
   display: flex;
   justify-content: space-between;
 }
-.profile__info-box{
+.profile__info-box {
   flex: 1 1 70%;
   padding: 20px;
 }
-.profile-heading{
+.profile-heading {
   font-size: 50px;
   margin: 20px 0;
 }
-.profile__info{
+.profile__info {
   margin: 30px 0;
   font-size: 20px;
   display: flex;
@@ -74,30 +73,30 @@ body{
   justify-content: space-between;
   gap: 10px;
 }
-.profile__info p{
+.profile__info p {
   padding: 10px;
   border-radius: 20px;
 }
 
-.profile__info p:nth-child(1){
-  background: #8C7C6D;  
+.profile__info p:nth-child(1) {
+  background: #8c7c6d;
 }
-.profile__info p:nth-child(2){
-  background: #28a745;  
+.profile__info p:nth-child(2) {
+  background: #28a745;
 }
-.profile__info p:nth-child(3){
-  background: #1A1C40;
-  color: #fff;  
+.profile__info p:nth-child(3) {
+  background: #1a1c40;
+  color: #fff;
 }
-.profile__info:last-child{
-  margin-top:50px;
+.profile__info:last-child {
+  margin-top: 50px;
   background: #28a745;
   border-radius: 20px;
 }
 .profile-btn {
-  background: #1A1C40;
+  background: #1a1c40;
   width: 100%;
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 20px;
   text-align: center;
   padding: 10px 15px;
@@ -105,7 +104,7 @@ body{
 }
 
 /* Repos Components */
-.repo-box{
+.repo-box {
   margin: 50px 0;
   padding: 20px 10px;
   background: #e0e0e0;
@@ -114,41 +113,41 @@ body{
   border-radius: 10px;
 }
 
-.repo-title{
+.repo-title {
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
-.repo-link{
+.repo-link {
   font-size: 20px;
-  color: #1A1C40;
+  color: #1a1c40;
   display: block;
-  border-bottom: 1px solid #1A1C40;
+  border-bottom: 1px solid #1a1c40;
   margin-top: 20px;
   text-transform: capitalize;
   width: 200px;
   padding: 10px 30px;
   text-align: center;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .repo-link:hover,
-.repo-link:active{
-  background: #1A1C40;
+.repo-link:active {
+  background: #1a1c40;
   color: #fff;
   font-weight: 600;
   box-shadow: 0 1rem 2rem rgb(0 0 0 / 20%);
   transform: translateY(-2px);
 }
 
-.repo-list-heading{
+.repo-list-heading {
   margin-top: 5rem;
 }
 
 /* Footer  */
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -156,40 +155,38 @@ body{
   padding: 30px;
   color: grey;
 }
-.footer__heading{
+.footer__heading {
   color: #000;
 }
 
-.dot{
+.dot {
   font-size: 30px;
   color: red;
 }
 
-.ingression-logo{
+.ingression-logo {
   width: 10%;
   height: 10%;
 }
 
-
 /* Profile Component */
 
-.pages{
+.pages {
   text-align: start;
 }
 
-.pagination-btn__container{
+.pagination-btn__container {
   display: flex;
   justify-content: space-between;
 }
 
 /* Repo Route */
 
-.repoInfo-container{
+.repoInfo-container {
   width: 80%;
   margin: auto;
-
 }
-.repoInfo-box{
+.repoInfo-box {
   background: #e0e0e0;
   margin: 20px 0;
   padding: 20px;
@@ -197,29 +194,28 @@ body{
   border-radius: 10px;
 }
 
-.repo-description{
+.repo-description {
   font-size: 20px;
 }
 
-.repoInfo-box--small{
+.repoInfo-box--small {
   margin: 20px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
 }
-.repoInfo-box--small *{
+.repoInfo-box--small * {
   padding: 5px;
   margin: 10px;
-  background: #8C7C6D;
+  background: #8c7c6d;
   border-radius: 20px;
 }
 
-#repo-link{
+#repo-link {
   width: 500px;
   margin-top: 3rem;
 }
 
-.error-message{
+.error-message {
   font-size: 20px;
   background: rgba(201, 27, 27, 0.916);
   padding: 20px;
@@ -230,7 +226,6 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 /* Media Queries */
@@ -239,15 +234,15 @@ body{
     width: 5%;
     margin: 0 5px;
     padding: 3px;
-}
-  .profile__img-box{
+  }
+  .profile__img-box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin:20px 0;
+    margin: 20px 0;
   }
 
-  .profile__info{
+  .profile__info {
     margin: 15px 0;
     font-size: 16px;
     gap: 3px;
@@ -267,7 +262,7 @@ body{
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 5px;
-}
+  }
   .repo-box {
     margin: 30px 0;
     padding: 10px 5px;
@@ -285,7 +280,7 @@ body{
   .profile-box {
     flex-direction: column;
     margin-bottom: 10px;
-}
+  }
   .profile__img-box {
     margin: 5px 0;
     align-items: center;
@@ -297,12 +292,16 @@ body{
     font-size: 15px;
     padding: 7px 10px;
     border-radius: 20px;
+  }
+  .repo-container {
+    width: 100%;
+    padding: 10px;
 }
   .repo-title {
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0;
-}
+  }
   .repo-box {
     margin: 20px 0;
     padding: 7px 3px;
@@ -312,5 +311,29 @@ body{
     margin-top: 15px;
     width: 150px;
     padding: 10px;
+  }
+  .footer {
+    font-size: 14px;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+  
+}
+
+@media only screen and (max-width: 400px) {
+  .profile__info p {
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .repoInfo-box {
+    margin: 20px 0;
+    padding: 10px;
+  }
+  #repo-link {
+    font-size: 13px;
+    width: 200px;
+    margin-top: 2rem;
 }
 }
